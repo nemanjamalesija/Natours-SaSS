@@ -1,7 +1,7 @@
 const Features = () => {
   return (
     <section className='section-features'>
-      <div className='row row-col-4'>
+      <div className='row row__col--4'>
         <div className='col-1-of-4'>
           <div className='feature-box'>
             <i className='feature-box__icon icon-basic-world'></i>

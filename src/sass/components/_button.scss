@@ -79,3 +79,9 @@
     transform: translateY(-2px);
   }
 }
+
+.btn--green {
+  background-color: $color-primary;
+  text-align: center;
+  color: $color-white;
+}
