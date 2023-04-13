@@ -9,3 +9,8 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 6rem;
 }
+
+.row-col-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+}

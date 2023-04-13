@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section className='section section-about'>
       <div className='u-center-text u-margin-bottom-big'>
-        <h2 className='heading-secondary'>Exciting tours for adventuros people</h2>
+        <h2 className='heading-secondary'>Exciting tours for adventurous people</h2>
       </div>
       <div className='row'>
         <div className='col-1-of-2'>
@@ -29,7 +29,7 @@ const About = () => {
             Learn more &rarr;
           </a>
         </div>
-        <div className='col-1-of-2'>
+        <div className='col-2-of-2'>
           <div className='composition'>
             <img
               src={nat1Large}

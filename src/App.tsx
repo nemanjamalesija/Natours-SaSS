@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import About from './pages/About';
 import Features from './pages/Features';
+import Tours from './pages/Tours';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <About />
       <Features />
+      <Tours />
     </div>
   );
 }
