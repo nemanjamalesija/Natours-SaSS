@@ -1,10 +1,6 @@
 import logoWhite from '../img/logoWhite.png';
 
 const Header = () => {
-  const mast = {
-    slast: 'glast',
-  };
-
   return (
     <header className='header'>
       <div className='header__logo-box'>
