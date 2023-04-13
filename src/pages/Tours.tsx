@@ -27,7 +27,15 @@ const Tours = () => {
               </div>
             </div>
             <div className='card__side card__side--back card__side--back-1'>
-              Back text
+              <div className='card__cta'>
+                <div className='card__price-box u-margin-bottom-big'>
+                  <p className='card__price-only'>Only</p>
+                  <p className='card__price-value'>$297</p>
+                </div>
+                <a href='#' className='btn btn--white'>
+                  Book now!
+                </a>
+              </div>
             </div>
           </div>
         </div>
