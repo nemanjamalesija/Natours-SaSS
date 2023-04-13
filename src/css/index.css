@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap');
-@import './iconfont.css';
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap");
+@import '../css/iconfont.css';
 *,
 ::before,
 ::after {
@@ -52,7 +51,7 @@ body {
   }
 }
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   line-height: 1.7;
   color: #777;
@@ -135,6 +134,17 @@ body {
   margin-top: -20vh;
 }
 
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right, rgba(128, 214, 113, 0.805), rgba(84, 196, 121, 0.805)), url(../img/nat-4.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+}
+.section-features > * {
+  transform: skewY(7deg);
+}
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -158,7 +168,7 @@ body {
 }
 .btn:link::after,
 .btn:visited::after {
-  content: '';
+  content: "";
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -190,8 +200,7 @@ body {
   background-color: #fff;
 }
 
-.btn-text:link,
-.btn-text:visited {
+.btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
   color: #55c67a;
   display: inline-block;
@@ -215,7 +224,7 @@ body {
   position: relative;
 }
 .composition__photo {
-  width: 55%;
+  width: 50%;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   position: absolute;
   z-index: 998;
@@ -244,14 +253,29 @@ body {
   transform: scale(0.95);
 }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+.feature-box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+.feature-box__icon {
+  font-size: 6rem;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
 .header {
   height: 95vh;
-  background-image: linear-gradient(
-      to right,
-      rgba(128, 214, 113, 0.805),
-      rgba(84, 196, 121, 0.805)
-    ),
-    url(../img/hero.jpg);
+  background-image: linear-gradient(to right, rgba(128, 214, 113, 0.805), rgba(84, 196, 121, 0.805)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -278,6 +302,11 @@ body {
   grid-template-columns: 1fr 1fr;
   max-width: 120rem;
   margin: 0 auto;
+}
+
+.row-col-4 {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6rem;
 }
 
 /*# sourceMappingURL=index.css.map */

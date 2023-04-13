@@ -4,3 +4,8 @@
   max-width: 120rem;
   margin: 0 auto;
 }
+
+.row-col-4 {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6rem;
+}
