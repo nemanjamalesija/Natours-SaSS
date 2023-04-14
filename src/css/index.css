@@ -416,7 +416,7 @@ body {
 
 .story {
   width: 75%;
-  margin: 0 auto;
+  margin: 0 auto 7.2rem auto;
   box-shadow: 0 3 6rem rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 3px;
@@ -430,6 +430,7 @@ body {
   width: 15rem;
   height: 15rem;
   float: left;
+  position: relative;
   -webkit-shape-outside: circle(50% at 50% 50%);
   shape-outside: circle(50% at 50% 50%);
   -webkit-clip-path: circle(50% at 50% 50%);
@@ -438,9 +439,32 @@ body {
 }
 .story__image {
   height: 100%;
+  transform: translateX(-4rem) scale(1.4);
+  transition: all 0.5s;
+}
+.story__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.5s;
+  backface-visibility: hidden;
 }
 .story__text {
   transform: skewX(12deg);
+}
+.story:hover .story__caption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+.story:hover .story__image {
+  transform: translateX(-4rem) scale(1);
+  filter: blur(3px) brightness(80%);
 }
 
 .header {

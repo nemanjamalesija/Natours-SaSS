@@ -1,15 +1,15 @@
-import nat8 from '../img/nat8.jpg';
+import nat9 from '../img/nat9.jpg';
 
-const FirstTestimonial = () => {
+const SecondTestimonial = () => {
   return (
-    <div className='story u-margin-bottom-large'>
+    <div className='story'>
       <figure className='story__shape'>
-        <img src={nat8} alt='Person on a tour' className='story__image' />
-        <figcaption className='story__caption'>Marry Smith</figcaption>
+        <img src={nat9} alt='Person on a tour' className='story__image' />
+        <figcaption className='story__caption'>Jack Wilson</figcaption>
       </figure>
       <div className='story__text'>
         <h3 className='heading-tertiary u-margin-bottom-small'>
-          I had the best weekend ever with my family
+          WOW! MY LIFE IS COMPLETELY DIFFERENT NOW
         </h3>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores magni culpa
@@ -23,4 +23,4 @@ const FirstTestimonial = () => {
   );
 };
 
-export default FirstTestimonial;
+export default SecondTestimonial;

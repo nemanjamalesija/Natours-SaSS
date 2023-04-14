@@ -1,4 +1,5 @@
 import FirstTestimonial from '../components/FirstTestimonial';
+import SecondTestimonial from '../components/SecondTestimonial';
 
 const Testimonials = () => {
   return (
@@ -8,6 +9,7 @@ const Testimonials = () => {
       </div>
       <div className='row'>
         <FirstTestimonial />
+        <SecondTestimonial />
       </div>
     </section>
   );
