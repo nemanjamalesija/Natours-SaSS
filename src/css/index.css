@@ -160,6 +160,11 @@ body {
   margin-top: -10rem;
 }
 
+.section-stories {
+  padding: 15rem 0;
+  background-color: #f7f7f7;
+}
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -409,6 +414,35 @@ body {
   font-weight: 100;
 }
 
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3 6rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  text-align: left;
+  font-size: 1.6rem;
+  transform: skewX(-12deg);
+}
+.story__shape {
+  width: 15rem;
+  height: 15rem;
+  float: left;
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  transform: translateX(-3rem) skewX(12deg);
+}
+.story__image {
+  height: 100%;
+}
+.story__text {
+  transform: skewX(12deg);
+}
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right, rgba(128, 214, 113, 0.805), rgba(84, 196, 121, 0.805)), url(../img/hero.jpg);
@@ -435,10 +469,12 @@ body {
 }
 
 .row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   max-width: 120rem;
   margin: 0 auto;
+  display: grid;
+}
+.row__col--2 {
+  grid-template-columns: 1fr 1fr;
 }
 .row__col--4 {
   grid-template-columns: repeat(4, 1fr);

@@ -1,7 +1,8 @@
 import Header from './components/Header';
-import About from './pages/About';
-import Features from './pages/Features';
-import Tours from './pages/Tours';
+import About from './sections/About';
+import Features from './sections/Features';
+import Testimonials from './sections/Testimonials';
+import Tours from './sections/Tours';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <About />
       <Features />
       <Tours />
+      <Testimonials />
     </div>
   );
 }

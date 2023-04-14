@@ -8,7 +8,7 @@ const About = () => {
       <div className='u-center-text u-margin-bottom-big'>
         <h2 className='heading-secondary'>Exciting tours for adventurous people</h2>
       </div>
-      <div className='row'>
+      <div className='row row__col--2'>
         <div className='col-1-of-2'>
           <h3 className='heading-tertiary u-margin-bottom-small'>
             You are going to fall in love with nature

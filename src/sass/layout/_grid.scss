@@ -1,8 +1,11 @@
 .row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   max-width: 120rem;
   margin: 0 auto;
+  display: grid;
+
+  &__col--2 {
+    grid-template-columns: 1fr 1fr;
+  }
 
   &__col--4 {
     grid-template-columns: repeat(4, 1fr);
