@@ -58,7 +58,7 @@ const BookForm = () => {
                   Large tour group
                 </label>
               </div>
-              <div className='book-form__group'>
+              <div className='book-form__group u-margin-top-medium'>
                 <button type='submit' className='button btn btn--green'>
                   Next step &rarr;
                 </button>

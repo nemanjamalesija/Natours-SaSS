@@ -60,6 +60,16 @@
   }
 }
 
+.btn--green {
+  background-color: $color-primary;
+  text-align: center;
+  color: $color-white;
+
+  &:after {
+    background-color: $color-primary;
+  }
+}
+
 .btn-text {
   &:link,
   &:visited {
@@ -83,10 +93,4 @@
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
     transform: translateY(-2px);
   }
-}
-
-.btn--green {
-  background-color: $color-primary;
-  text-align: center;
-  color: $color-white;
 }

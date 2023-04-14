@@ -128,6 +128,10 @@ body {
   margin-bottom: 8rem;
 }
 
+.u-margin-top-medium {
+  margin-top: 4rem;
+}
+
 .u-margin-top-huge {
   margin-top: 10rem;
 }
@@ -244,6 +248,15 @@ body {
   background-color: #fff;
 }
 
+.btn--green {
+  background-color: #55c67a;
+  text-align: center;
+  color: #fff;
+}
+.btn--green:after {
+  background-color: #55c67a;
+}
+
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
   color: #55c67a;
@@ -262,12 +275,6 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
-}
-
-.btn--green {
-  background-color: #55c67a;
-  text-align: center;
-  color: #fff;
 }
 
 .composition {
@@ -514,9 +521,6 @@ body {
 }
 .book-form__group:not(:last-child) {
   margin-bottom: 2rem;
-}
-.book-form__group:last-child {
-  margin-top: 2rem;
 }
 .book-form__input {
   font-size: 1.5rem;
