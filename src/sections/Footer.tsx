@@ -52,7 +52,7 @@ const Footer = () => {
             <a href='#' className='footer__link'>
               Natours &nbsp;
             </a>
-            Advanced CSS and SASS course by Jonas Schmedtmann..
+            Advanced CSS and SASS course by Jonas Schmedtmann.
           </p>
         </div>
       </div>
