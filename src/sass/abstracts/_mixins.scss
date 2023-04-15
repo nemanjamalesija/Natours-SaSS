@@ -1,0 +1,12 @@
+@mixin absolute-center-horizotal-vertical {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin absolute-top-left-zero {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

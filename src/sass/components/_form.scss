@@ -70,9 +70,7 @@
     border: 5px solid $color-primary;
     border-radius: 50%;
     display: inline-block;
-    position: absolute;
-    left: 0;
-    top: 0;
+    @include absolute-top-left-zero;
     top: -0.4rem;
 
     &::after {
@@ -82,10 +80,7 @@
       border-radius: 50%;
       background-color: $color-primary;
       display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      @include absolute-center-horizotal-vertical;
       opacity: 0;
       transition: opacity 0.3s;
     }

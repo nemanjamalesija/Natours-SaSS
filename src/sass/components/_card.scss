@@ -7,9 +7,7 @@
 
   &__side {
     height: 52rem;
-    position: absolute;
-    top: 0;
-    left: 0;
+    @include absolute-top-left-zero;
     width: 100%;
     transition: all 0.8s ease;
     backface-visibility: hidden;
@@ -155,10 +153,7 @@
 
   // BACK SIDE STYLING
   &__cta {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @include absolute-center-horizotal-vertical;
     width: 90%;
     text-align: center;
   }
