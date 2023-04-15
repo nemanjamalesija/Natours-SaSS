@@ -1,15 +1,36 @@
 import React from 'react';
 
 const Navigation = () => {
+  const [isNavActive, setisNavActive] = React.useState(false);
+
   return (
     <div className='navigation'>
-      <input type='checkbox' className='navigation__checkbox' id='navi-toggle' />
-      <label htmlFor='navi-toggle' className='navigation__button'>
+      <button
+        className={
+          isNavActive
+            ? 'navigation__button navigation__button--active'
+            : 'navigation__button '
+        }
+        onClick={(e) => {
+          e.preventDefault();
+          setisNavActive(!isNavActive);
+        }}
+      >
         <span className='navigation__icon'>&nbsp;</span>
-      </label>
-      <div className='navigation__background'></div>
+      </button>
+      <div
+        className={
+          isNavActive
+            ? 'navigation__background'
+            : 'navigation__background navigation__background--hidden'
+        }
+      ></div>
       &nbsp;
-      <nav className='navigation__nav'>
+      <nav
+        className={
+          isNavActive ? 'navigation__nav' : 'navigation__nav navigation__nav--hidden'
+        }
+      >
         <ul className='navigation__list'>
           <li className='navigation__item'>
             <a href='#' className='navigation__link'>
