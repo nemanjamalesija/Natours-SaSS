@@ -3,13 +3,16 @@ import nat9 from '../img/nat9.jpg';
 
 const PopUp = () => {
   return (
-    <div className='popup'>
+    <div className='popup' id='popup'>
       <div className='popup__content'>
         <div className='popup__left'>
           <img src={nat8} alt='Tour photo' className='popup__img' />
           <img src={nat9} alt='Tour photo' className='popup__img' />
         </div>
         <div className='popup__right'>
+          <a href='#section-tours' className='popup__close'>
+            &times;
+          </a>
           <h2 className='heading_secondary u-margin-bottom-small'>Start booking now</h2>
           <h3 className='heading-tertiary u-margin-bottom-small'>
             Important &ndash; Please read these terms before booking

@@ -11,7 +11,7 @@ const Header = () => {
           <span className='heading-primary--main'>Outdoors</span>
           <span className='heading-primary--sub'>Is Where life happens</span>
         </h1>
-        <a href='#' className='btn btn--white'>
+        <a href='#section-tours' className='btn btn--white'>
           Discover our tours
         </a>
       </div>

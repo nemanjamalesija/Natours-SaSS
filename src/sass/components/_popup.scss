@@ -8,6 +8,9 @@
   background-color: rgba($color-black, 0.8);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
 
   &__content {
     @include absolute-center-horizotal-vertical;
@@ -18,6 +21,9 @@
     display: table;
     overflow: hidden;
     z-index: 9999;
+    position: relative;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all 0.3s 0.2s;
   }
 
   &__left {
@@ -43,7 +49,7 @@
 
     -moz-column-count: 2;
     -moz-column-gap: 4rem;
-    -moz-column-rule: 1px solid $color-grey-light;
+    -moz-column-rule: 1px solid $color-grey-light-2;
 
     column-count: 2;
     column-gap: 4rem;
@@ -52,5 +58,33 @@
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
+  }
+
+  // OPEN MODAL
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:target > &__content {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      position: absolute;
+      right: 2.5rem;
+      top: 2.5rem;
+      font-size: 3rem;
+      text-decoration: none;
+      display: inline-block;
+      color: $color-grey-dark;
+      line-height: 1;
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
   }
 }

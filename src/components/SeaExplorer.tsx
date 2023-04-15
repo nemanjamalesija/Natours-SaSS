@@ -25,7 +25,7 @@ const SeaExplorer = () => {
               <p className='card__price-only'>Only</p>
               <p className='card__price-value'>$297</p>
             </div>
-            <a href='#' className='btn btn--white'>
+            <a href='#popup' className='btn btn--white'>
               Book now!
             </a>
           </div>

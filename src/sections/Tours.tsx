@@ -4,7 +4,7 @@ import SnowAdventurer from '../components/SnowAdventurer';
 
 const Tours = () => {
   return (
-    <section className='section-tours'>
+    <section className='section-tours' id='section-tours'>
       <div className='u-center-text u-margin-bottom-big'>
         <h2 className='heading-secondary'>Most Popuar Tours</h2>
       </div>
