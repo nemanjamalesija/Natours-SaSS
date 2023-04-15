@@ -6,6 +6,7 @@ import Footer from './sections/Footer';
 import Navigation from './sections/Navigation';
 import Testimonials from './sections/Testimonials';
 import Tours from './sections/Tours';
+import PopUp from './sections/PopUp';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Testimonials />
       <BookForm />
       <Footer />
+      <PopUp />
     </div>
   );
 }
